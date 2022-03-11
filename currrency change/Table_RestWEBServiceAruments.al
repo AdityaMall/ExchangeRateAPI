@@ -1,4 +1,4 @@
-table 50100 "Rest Web Service Arguments"
+/*table 50100 "Rest Web Service Arguments"
 {
     DataClassification = ToBeClassified;
 
@@ -50,4 +50,4 @@ table 50100 "Rest Web Service Arguments"
 
     end;
 
-}
+}*/
