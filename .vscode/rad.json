@@ -1,1 +1,1 @@
-﻿{"Added":[],"Modified":[],"Removed":[]}
+﻿{"Added":[],"Modified":[{"Id":50505,"Kind":11,"Name":"OpenRates Mgt","PackagePath":"/src/EcxchangeRate_codeunit.al"},{"Id":50505,"Kind":16,"Name":"OpenRates Currencies","PackagePath":"/src/CurrencyPageExt.al"}],"Removed":[{"Id":50105,"Kind":13,"Name":"Proforma","PackagePath":"/src/report.al"},{"Id":50120,"Kind":12,"Name":"MyCustomerApi","PackagePath":"/src/APIpage.al"},{"Id":50144,"Kind":16,"Name":"JSON","PackagePath":"/src/currrency%20change/new.al"}]}

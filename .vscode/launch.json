@@ -6,14 +6,17 @@
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "sandbox-amy",
-            "startupObjectId": 5,
+            "environmentName": "Sandbox-amy",
+            "startupObjectId":5 ,
             "startupObjectType": "Page",
             "breakOnError": true,
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
-            "schemaUpdateMode": "ForceSync"
+            "schemaUpdateMode": "ForceSync",
+           
+            
+               
         }
     ]
 }

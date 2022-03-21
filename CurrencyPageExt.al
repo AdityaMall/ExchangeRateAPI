@@ -1,5 +1,6 @@
 pageextension 50505 "OpenRates Currencies" extends Currencies
 {
+
     actions
     {
         addlast(processing)
@@ -15,7 +16,7 @@ pageextension 50505 "OpenRates Currencies" extends Currencies
                 var
                     OpenRates: Codeunit "OpenRates Mgt";
                 begin
-                    OpenRates.GetRateForDate(Today());
+                    OpenRates.GetRateForDate(system.Today());
                 end;
             }
         }
