@@ -16,7 +16,7 @@ pageextension 50505 "OpenRates Currencies" extends Currencies
                 var
                     OpenRates: Codeunit "OpenRates Mgt";
                 begin
-                    OpenRates.GetRateForDate(system.Today());
+                    OpenRates.GetRateForDate(Today());
                 end;
             }
         }

@@ -1,5 +1,9 @@
 codeunit 50505 "OpenRates Mgt"
 {
+    trigger OnRun()
+    begin
+        GetRateForDate(Today());
+    end;
 
     procedure GetRateForDate(D: Date)
     var
@@ -30,12 +34,8 @@ codeunit 50505 "OpenRates Mgt"
         AuthString: Text;
         base64Convert: Codeunit "Base64 Convert";
 
-
-
     begin
-
         GenLedSetup.Get();
-
         //Add User authentication in API url with your API_Id & API_Password
         userName := 'amy137779907';
         Password := '2jamp6nqbctteje1h832m47otj';
@@ -81,10 +81,8 @@ codeunit 50505 "OpenRates Mgt"
                                                 ExchangeRate.Validate("Relational Exch. Rate Amount", 1 / CurRate);
                                                 ExchangeRate.Validate("Relational Adjmt Exch Rate Amt", 1 / CurRate);
                                                 ExchangeRate.Modify(true);
-                                            end else
-                                                Error('Exchange rate Not modify');
-                                        end else
-                                            Error('JsToken is Not convert to object');
+                                            end;
+                                        end;
                                     end;
                                 until CurRec.Next() = 0;
                         end else
